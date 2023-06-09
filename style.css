@@ -1,0 +1,133 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 300;
+}
+
+.main {
+    background-color: #a499bd;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+
+/* nth-child */
+ul>li:nth-child(odd) {
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+/* Direct Child Selector */
+main > section {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+/* Adjacent Sibling Selector */
+head, header, ul, h2, h1, h3, section, footer {
+    color: #333; 
+}
+
+h1 {
+    font-size: 4em;
+    color: #fff0f0;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    font-weight: 600;
+    line-height: 18px;
+    max-width: 100%;
+    padding-top: 300px;
+    
+}
+
+.myphoto {
+    width: 500px;
+    height: 150px;
+}
+
+.myphoto img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 40em;
+}
+
+img {
+    max-height: 400px;
+    width: auto;
+    align-items: center;
+    padding-left: 400px;
+    padding-right: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*BACKGROUND*/
+
+body {
+    background-image: url('img2.jpg');
+}
+
+/*FILTER FUNCTION*/
+
+img:hover {
+    filter: blur(2px);
+    filter: brightness(0.7);
+    filter: contrast(90%);
+    filter: grayscale(50%);
+    filter: sepia(90%) drop-shadow(16px 16px 20px rgb(78, 45, 45));
+    filter: hue-rotate(50deg);
+    filter: invert(75%);
+    filter: opacity(75%);
+}
+
+/*VIEWPORT*/
+
+div.wrapper {
+    width: 80%;
+    width: 80vw; 
+    background-color: rgb(236, 196, 182); 
+    border: 1px solid rgb(141, 140, 139); 
+}
+
+div.wrapper header {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(159, 195, 183);
+}
+
+@media (max-width: 600px) {
+    img {
+        max-width: 80%
+    }
+}
+  
+  
+  
+  
+  
+  
+
+
